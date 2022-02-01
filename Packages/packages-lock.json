@@ -139,11 +139,10 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.newtonsoft-json": {
-      "version": "2.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
+      "version": "file:com.unity.nuget.newtonsoft-json@2.0.0",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.services.core": {
       "version": "1.0.1",

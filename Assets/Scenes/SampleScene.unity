@@ -518,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.0000076293945}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &214122369
@@ -1573,7 +1573,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.488
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1723,8 +1723,8 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 4
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -1766,7 +1766,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 102.06, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1560420821
 MonoBehaviour:
@@ -2247,6 +2247,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1743995360}
   - component: {fileID: 1743995361}
+  - component: {fileID: 1743995362}
+  - component: {fileID: 1743995363}
   m_Layer: 0
   m_Name: ScoreBoard
   m_TagString: Untagged
@@ -2282,13 +2284,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0247131f13d4b62be3f647fcab5c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputField: {fileID: 1440181174}
-  _submitButton: {fileID: 370300272}
   currentScore: {fileID: 1560420821}
-  ScrollArea: {fileID: 214122367}
-  ScoreObject: {fileID: 6608590397112243756, guid: 2e81f5cbe5cf54c649a6a0377f50862d, type: 3}
-  supabaseURL: https://smrealrhgxmlsqfmoqja.supabase.co
-  apiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MzQyMjY2OCwiZXhwIjoxOTU4OTk4NjY4fQ.JIA6eKiDCMhaJtmi1kgkOlGPUy8_KAO9gnNy1mGIPeg
+  inputField: {fileID: 1440181174}
+  submitButton: {fileID: 370300272}
+  scrollArea: {fileID: 214122367}
+  scoreObject: {fileID: 6608590397112243756, guid: 2e81f5cbe5cf54c649a6a0377f50862d, type: 3}
+--- !u!114 &1743995362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743995359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5324d13a567b7e34f87058957f952086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  supabaseUrl: https://smrealrhgxmlsqfmoqja.supabase.co
+  supabaseKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MzQyMjY2OCwiZXhwIjoxOTU4OTk4NjY4fQ.JIA6eKiDCMhaJtmi1kgkOlGPUy8_KAO9gnNy1mGIPeg
+--- !u!114 &1743995363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743995359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fb4912dd00461a81743a967a1cbf69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreBoardView: {fileID: 1743995361}
 --- !u!1 &1781185126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,7 +2574,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 981262023}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.61
+  m_Size: 0.60999995
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 6608590397112243757}
   - component: {fileID: 6608590397112243758}
   - component: {fileID: -8025959051090673785}
-  - component: {fileID: 8998962381920970706}
+  - component: {fileID: 8474388625505772059}
   m_Layer: 5
   m_Name: UserScore
   m_TagString: Untagged
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &8998962381920970706
+--- !u!114 &8474388625505772059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -505,5 +505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9c476a26902410ba7b407b768d08e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UserName: {fileID: 6608590396504593976}
-  ScoreValue: {fileID: 6608590396651326875}
+  ranking: {fileID: 6608590397028341034}
+  userName: {fileID: 6608590396504593976}
+  scoreValue: {fileID: 6608590396651326875}

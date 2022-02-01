@@ -7,8 +7,6 @@ namespace SimpleRankingSupabase.Scripts
     [Table("scores")]
     public class ScoreModel : BaseModel
     {
-        [PrimaryKey("id")] public int Id { get; set; }
-
         [Column("userName")] public string UserName { get; set; }
 
         [Column("score")] public int Score { get; set; }
