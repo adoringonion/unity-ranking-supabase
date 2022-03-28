@@ -411,8 +411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5324d13a567b7e34f87058957f952086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supabaseUrl: https://smrealrhgxmlsqfmoqja.supabase.co
-  supabaseKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MzQyMjY2OCwiZXhwIjoxOTU4OTk4NjY4fQ.JIA6eKiDCMhaJtmi1kgkOlGPUy8_KAO9gnNy1mGIPeg
+  supabaseUrl: 
+  supabaseKey: 
 --- !u!1 &967628303013415185
 GameObject:
   m_ObjectHideFlags: 0
